@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="well">
+<h1>Thank you. Here is your loan status:</h1>
+<h2>Dear {{session['xName']}}, you provided the following:</h2>
+</div>
+<ul>
+  <li>'Gender': {{session['xGender']}}</li>
+  <li>'Married': {{session['xMarried']}}</li>
+  <li>'Education': {{session['xEducation']}}</li>
+  <li>'Dependents': {{session['xDepend']}}</li>
+  <li>'Self_Employed': {{session['xSelf_Employ']}}</li>
+  <li>'Credit_History': {{session['xCredit']}}</li>
+  <li>'Loan_Amount_Term': {{session['xLoan_Amount_Term']}}</li>
+  <li>'LoanAmount': {{session['xLoanAmount']}}</li>
+  <li>'ApplicantIncome': {{session['xApplicantIncome']}}</li>
+  <li>'CoapplicantIncome': {{session['xCoapplicantIncome']}}</li>
+</ul>
+
+<h2>Our Decision</h2>
+
+<p>Status: {{prediction}}</p>
+
+<p>Thank you {{session['xName']}}, for applying for a Loan with us </p>
+</div>
+</body>
+</html> 

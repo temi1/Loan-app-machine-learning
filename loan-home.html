@@ -1,0 +1,42 @@
+
+<h1>Welcome to Loan Hub</h1>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    <br>
+    {{ form.xName.label }} {{form.xName}}
+    <br>
+    {{ form.xGender.label}} {{form.xGender}}
+    <br>
+    {{form.xMarried.label}}{{form.xMarried}}
+    <br>
+    <br>
+    {{form.xDepend.label}}{{form.xDepend}}
+    <br>
+    <br>
+    {{ form.xEducation.label}} {{form.xEducation}}
+    <br>
+    <br>
+    {{form.xSelf_Employ.label}}{{form.xSelf_Employ}}
+    <br>
+    <br>
+    {{form.xApplicantIncome.label}}{{form.xApplicantIncome}}
+    <br>
+    <br>
+    {{form.xCoapplicantIncome.label}}{{form.xCoapplicantIncome}}
+    <br>
+    <br>
+    {{form.xLoanAmount.label}}{{form.xLoanAmount}}
+    <br>
+    <br>
+    {{form.xLoan_Amount_Term.label}}{{form.xLoan_Amount_Term}}
+    <br>
+    <br>
+    {{form.xCredit.label}}{{form.xCredit}}
+    <br>
+    <br>
+    {{form.xPropty.label}}{{form.xPropty}}
+    <br>
+    <br>
+    {{ form.submit() }}
+</form>
